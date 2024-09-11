@@ -14,16 +14,40 @@
   background: $white;
   color: $Yellow;
 }
-.bgGreen{
+.bgGreen {
   background: $greenLight;
   color: $white;
 }
-.bgyellow{
+.bgyellow {
   background: $Yellow;
   color: $white;
 }
-.bgGreen,.bgyellow{
- position: absolute;
- top: 8px;
- right: 8px;
+.bgGreen,
+.bgyellow {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.bgBlack {  
+  font-family: Inter;
+  background: $black;
+  color: $Yellow;
+  color: $white;
+  @include flex(row, start, center);
+  padding-inline: 22px;
+  img{
+    width: 20px;
+    height: 20px;
+  }
+ p{
+font-size: 12px;
+font-weight: 400;
+line-height: 14.52px;
+
+  @include flex(column, start, start);
+  span {
+    font-size: 18px;
+    line-height: 24.2px;
+  }
+ }
 }

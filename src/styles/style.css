@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 .container {
-  padding-inline: 5%;
+  padding-inline: 4%;
 }
 
 .hero {
@@ -165,11 +165,6 @@
   line-height: 21.78px;
 }
 .hero .rightDiv .manage a {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22.56px;
-  text-align: center;
   color: #146454;
 }
 .hero .rightDiv .discount {
@@ -199,10 +194,5 @@
   text-align: left;
 }
 .hero .rightDiv .discount a {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22.56px;
-  text-align: center;
-  color: #146454;
+  color: #F15C6C;
 }/*# sourceMappingURL=style.css.map */

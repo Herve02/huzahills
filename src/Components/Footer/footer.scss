@@ -1,0 +1,142 @@
+@import "../../styles/config";
+li {
+  list-style: none;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.31px;
+  color: $black !important;
+  white-space: nowrap;
+}
+footer {
+  @include flex(column, center, start);
+  gap: 20px;
+  width: 100%;
+  font-family: Abhaya Libre Medium;
+  color: $footerMcolor;
+  padding: 20px 0;
+
+  .topbar {
+    width: 100%;
+    @include flex(row, space-between, start);
+    gap: 20px;
+    padding-block: 20px;
+    & > * {
+      flex: 1;
+    }
+    .about {
+      flex: 2;
+      @include flex(column, start, start);
+      gap: 10px;
+      p {
+        font-family: Abhaya Libre;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.88px;
+      }
+      .appStore {
+        @include flex(row, start, center);
+        gap: 10px;
+      }
+    }
+    .importantLinks {
+      flex: 2.5;
+      @include flex(row, space-between, start);
+      gap: 20px;
+      .linksDiv {
+        @include flex(column, start, start);
+        gap: 10px;
+        ul {
+          @include flex(column, start, start);
+          gap: 10px;
+
+          li {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.41px;
+            a {
+              color: $footerMcolor;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 21.23px;
+            }
+          }
+          .loadmoreBtn{
+            border: none;
+            color: $greenLight;
+          }
+        }
+      }
+    }
+    .contacts {
+      flex: 1;
+      @include flex(column, start, start);
+      gap: 15px;
+      h2{
+        color: $footerMcolor;
+      }
+      p {
+        font-family: Abhaya Libre;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.88px;
+      }
+      
+      .socialIcons{
+        @include flex(row, start, center);
+        gap: 10px;
+      }
+    }
+  }
+
+  .bottombar {
+    width: 100%;
+    @include flex(row, space-between, center);
+    gap: 20px;
+    padding-block: 20px;
+    color: $footerBColorS;
+    .icons-policies {
+      @include flex(row, start, center);
+      gap: 10px;
+      .socialIcons {
+        @include flex(row, start, center);
+        gap: 10px;
+      }
+      ul {
+        @include flex(row, start, center);
+        gap: 10px;
+        li {
+          a {
+            color: $footerBColorS;
+          }
+        }
+      }
+    }
+    .policies {
+      @include flex(row, space-between, center);
+      gap: 10px;
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+      }
+    }
+    .paymentMethods {
+      @include flex(row, start, center);
+      gap: 10px;
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.23px;
+        text-transform: capitalize;
+        color: #2b2929;
+      }
+      .icons {
+        @include flex(row, start, center);
+        gap: 10px;
+      }
+    }
+  }
+}

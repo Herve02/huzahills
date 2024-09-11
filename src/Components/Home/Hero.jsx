@@ -58,14 +58,14 @@ const Hero = () => {
               publishing and graphic design, Lorem ipsum is a placeholder text
               commonly used to demonstrate
             </p>
-            <Link to="/">Learn More</Link>
+            <Links to="/" cName="btn bgwhite" text="Get Register" />
           </div>
           <div className="discount">
             <h2>
               -50 <br /> WNTER
             </h2>
             <h1>SALE</h1>
-            <Link to="/">SHOP NOW</Link>
+            <Links to="/" cName="btn bgwhite" text="Shop Now" />
           </div>
         </div>
       </div>

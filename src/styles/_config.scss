@@ -7,8 +7,9 @@ $greenLight: #2A7264;
 $greenSolid: #20603D;
 $lowOpacityHeader: #9F9F9F;
 $footerMcolor:#624D4D;
-$footerColorS: #817D7D;
+$footerBColorS: #817D7D;
 $categoryColor: #4B4B4B;
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 @mixin flex($direction, $justify-content, $align-items) {
     display: flex;
@@ -18,5 +19,5 @@ $categoryColor: #4B4B4B;
   }
 
 .container{
-    padding-inline: 5%;
+    padding-inline: 4%;
 }

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
+.container {
+  padding-inline: 4%;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.31px;
+  color: #000000 !important;
+  white-space: nowrap;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+  font-family: Abhaya Libre Medium;
+  color: #624D4D;
+  padding: 20px 0;
+}
+footer .topbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  padding-block: 20px;
+}
+footer .topbar > * {
+  flex: 1;
+}
+footer .topbar .about {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+footer .topbar .about p {
+  font-family: Abhaya Libre;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.88px;
+}
+footer .topbar .about .appStore {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+footer .topbar .importantLinks {
+  flex: 2.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+footer .topbar .importantLinks .linksDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+footer .topbar .importantLinks .linksDiv ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+footer .topbar .importantLinks .linksDiv ul li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+}
+footer .topbar .importantLinks .linksDiv ul li a {
+  color: #624D4D;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.23px;
+}
+footer .topbar .importantLinks .linksDiv ul .loadmoreBtn {
+  border: none;
+  color: #2A7264;
+}
+footer .topbar .contacts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+}
+footer .topbar .contacts h2 {
+  color: #624D4D;
+}
+footer .topbar .contacts p {
+  font-family: Abhaya Libre;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.88px;
+}
+footer .topbar .contacts .socialIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+footer .bottombar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-block: 20px;
+  color: #817D7D;
+}
+footer .bottombar .icons-policies {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+footer .bottombar .icons-policies .socialIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+footer .bottombar .icons-policies ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+footer .bottombar .icons-policies ul li a {
+  color: #817D7D;
+}
+footer .bottombar .policies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+footer .bottombar .policies p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+}
+footer .bottombar .paymentMethods {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+footer .bottombar .paymentMethods p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.23px;
+  text-transform: capitalize;
+  color: #2b2929;
+}
+footer .bottombar .paymentMethods .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}/*# sourceMappingURL=footer.css.map */

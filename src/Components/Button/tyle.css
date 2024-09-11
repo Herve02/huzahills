@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 .container {
-  padding-inline: 5%;
+  padding-inline: 4%;
 }
 
 .btn {
@@ -31,8 +31,38 @@
   color: #ffffff;
 }
 
-.bgGreen, .bgyellow {
+.bgGreen,
+.bgyellow {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.bgBlack {
+  font-family: Inter;
+  background: #000000;
+  color: #FF9500;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding-inline: 22px;
+}
+.bgBlack img {
+  width: 20px;
+  height: 20px;
+}
+.bgBlack p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.bgBlack p span {
+  font-size: 18px;
+  line-height: 24.2px;
 }/*# sourceMappingURL=tyle.css.map */
