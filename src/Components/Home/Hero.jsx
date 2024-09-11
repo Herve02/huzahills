@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Categories } from "./Categories";
-import Links from "../Components/Button/Links";
+import Links from "../Button/Links";
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
               <Links to="/" cName="btn bgwhite" text="Buy Now" />
             </div>
             <div className="img">
-              <img src="./Images/heroGrped.png" alt=""  />
+              <img src="./Images/heroGrped.png" alt="" />
             </div>
           </div>
           <div className="offers">

@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsCard from "../Components/ProductCard/ProductsCard";
+import ProductsCard from "../ProductCard/ProductsCard";
 import Hero from "./Hero";
 
 const HomePage = () => {
