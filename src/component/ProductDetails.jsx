@@ -75,7 +75,7 @@ const ProductDetail = () => {
         </div>
 
         <div className="chart-section">
-        <button className="chart-btn"> <i className='bx bx-message-square-detail bx-tada'></i> Chat with us</button>
+        <button className="chart-btn"> Chat with us</button>
         <button className="contact-btn"> <i class='bx bx-phone-call bx-tada'></i> Contact the seller</button>
         </div>
       </div>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 .product-detail {
   display: flex;
   flex-wrap: wrap;
@@ -37,25 +38,40 @@
 .product-info {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   flex: 1;
   padding: 20px;
 }
 .product-info .product-description {
   color: rgba(0, 0, 0, 0.577);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20.2px;
 }
 
 .product-info h1 {
-  font-size: 2rem;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20.2px;
+  text-align: left;
 }
 
 .product-price span {
-  font-weight: bold;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20.2px;
 }
 
 .options {
   display: flex;
   gap: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
 }
 .options select {
   padding: 2px;
@@ -91,6 +107,10 @@
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
 }
 
 .contact-btn {
@@ -114,8 +134,9 @@ i.bx {
 .product-tabs {
   width: 100%;
   display: flex;
+  gap: 10px;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .tabs {
@@ -129,6 +150,10 @@ i.bx {
   border: none;
   cursor: pointer;
   font-weight: bold;
+  font-family: Alatsi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20.2px;
 }
 
 .tabs button.active {
@@ -137,8 +162,11 @@ i.bx {
 }
 
 .tab-content {
-  margin-top: 20px;
   width: 70%;
+  font-family: Abhaya Libre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20.2px;
 }
 
 .related-products {
@@ -152,10 +180,15 @@ i.bx {
   width: 100%;
   display: flex;
   gap: 20px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20.2px;
 }
 
 .related-product-card {
   border: 1px solid #ccc;
+  border-radius: 5px;
   padding: 10px;
   text-align: center;
 }
