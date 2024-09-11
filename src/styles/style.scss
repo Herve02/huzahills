@@ -1,0 +1,183 @@
+@import "../styles/_config.scss";
+.hero {
+  flex: 1;
+  width: 100%;
+  min-height: 100vh;
+  padding-block: 15px;
+  @include flex(row, space-between, strech);
+  gap: 20px;
+  .categories {
+    width: 25%;
+    @include flex(column, center, start);
+    // background: #71b941;
+    background: #f9fcf7;
+    border-radius: 10px;
+    gap: 10px;
+    li {
+      a {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24.2px;
+        color: $categoryColor;
+      }
+    }
+  }
+  .middleDiv {
+    width: 50%;
+    @include flex(column, start, center);
+    gap: 20px;
+    .cta {
+      width: 100%;
+      height: 90%;
+      background-color: $Yellow;
+      @include flex(row, start, center);
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      padding-left: 30px;
+      .contents {
+        width: 250px;
+        z-index: 9;
+        font-family: Inter;
+        color: $white;
+        h1 {
+          font-size: 42px;
+          font-weight: 900;
+          line-height: 48.61px;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 38.73px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 21.78px;
+        }
+      }
+      .img {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .offers {
+      @include flex(row, space-between, center);
+      gap: 20px;
+      width: 100%;
+      & > * {
+        flex: 1;
+      }
+      .btm-img {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../public/Images/highheels.png");
+        background-size: cover;
+        background-position: center;
+        height: 100px;
+        border-radius: 12px;
+        @include flex(column, center, center);
+        p {
+          font-family: Inter;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29.05px;
+          text-align: center;
+          color: $white;
+        }
+      }
+      .btm-img:nth-child(2) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../public/Images/yellowHeadset.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      .btm-img:nth-child(3) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../public/Images/yellowHeadset.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      .btm-img:nth-child(4) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("../../public/Images/yellowHeadset.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+  .rightDiv {
+    width: 25%;
+    @include flex(column, center, center);
+    gap: 20px;
+    .manage {
+      width: 100%;
+      height: 45%;
+      background: $greenSolid;
+      @include flex(column, center, start);
+      font-family: Inter;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.78px;
+      }
+      a {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22.56px;
+        text-align: center;
+        color: $btnGreen;
+      }
+    }
+    .discount {
+      width: 100%;
+      height: 50%;
+      background: url("../../public/Images/rightFrame.svg");
+      background-position: center;
+      background-size: cover;
+      border-radius: 12px;
+      @include flex(column, center, center);
+      font-family: Inter;
+      color: $white;
+      h2 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.73px;
+      }
+      h1 {
+        font-family: Inter;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 87.14px;
+        text-align: left;
+      }
+      a {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22.56px;
+        text-align: center;
+        color: $btnGreen;
+      }
+    }
+  }
+}
