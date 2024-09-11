@@ -1,19 +1,19 @@
-import React from "react";
-import "./styles/style.css";
-import HomePage from "./Components/Home/HomePage";
-import NavBar from "../src/Components/NavBar/NavBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-const App = () => {
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import Product from "./component/Product";
+import ProductDetail from "./component/ProductDetails";
+import Subscription from "./component/Subscription";
+function App() {
   return (
-    <>
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Product />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/subscription" element={<Subscription />} />
+      </Routes>
+    </div>
+    </Router>
   );
-};
+}
 
 export default App;
