@@ -3,10 +3,10 @@ import "./footer.css";
 import AppStore from "../Button/AppStore";
 import { Link } from "react-router-dom";
 import { Categories } from "../Home/Categories";
-import { useContext } from "react";
+// import { useContext } from "react";
 // import { HuzaAppContext } from "../../Components/Context/ContextProvider";
 const Footer = () => {
-  // const { open } = useContext(HuzaAppContext);
+  // const { open,ShowMore,show } = useContext(HuzaAppContext);
   return (
     <>
       <footer className="container">
@@ -75,16 +75,15 @@ const Footer = () => {
             <div className="linksDiv">
               <h2>Categories </h2>
               <ul>
-                {Categories.slice(0, 4).map((category) => {
+                {                
+                Categories.slice(0, 4).map((category) => {
                   return (
-                    <>
-                      <li key={category.id}>
-                        <Link to="/">{category.name}</Link>
-                      </li>
-                    </>
+                    <li key={category.id}>
+                      <Link to="/">{category.name}</Link>
+                    </li>
                   );
-                })}
-                <button className="loadmoreBtn">More Categories</button>
+                })                
+              }
               </ul>
             </div>
           </div>
