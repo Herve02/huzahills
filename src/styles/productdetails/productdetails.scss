@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-inline: 4%;
+  }
+  
+  .product-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .image-thumbnails {
+    display: flex;
+    gap: 30px;
+    &>*{
+        flex: 1;
+    }
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    padding: 20px;
+    .product-description{
+        color: rgba(0, 0, 0, 0.577);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20.2px;
+
+    }
+  }
+  
+  .product-info h1 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20.2px;
+    text-align: left;
+  }
+  
+  .product-price span {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20.2px;
+  }
+  
+  .options {
+    display: flex;
+    gap: 10px;  
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+
+    select{
+        padding: 2px;
+        border-radius: 5px;
+        border: none;
+        background: #F4F4F4;
+
+    }
+    .quantity-buttons{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .increase,.decrease{
+            background: #F4F4F4;
+            border: none;
+            padding: 2px 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+  }
+  .chart-section{
+    display: flex;
+    gap: 20px;
+  }
+  .chart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #297549;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+  }
+  .contact-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:white;
+    color: #297549;
+    border: none;
+    border: 1px solid #297549;
+    border-radius: 10px;
+    width: fit-content;
+    cursor: pointer;
+  }
+  i.bx{
+    color: #297549;
+    font-size: 12px;
+  }
+  .product-tabs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .tabs button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Alatsi;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.2px;
+  }
+  
+  .tabs button.active {
+    border-bottom: 2px solid #000;
+    background-color: #f5f5f5;
+  }
+  
+  .tab-content {
+    width: 70%;
+    font-family: Abhaya Libre Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.2px;
+
+  }
+
+
+  .related-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    .related-product-list {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20.2px;
+
+
+      }
+  }
+  
+  .related-product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .related-image {
+    width: 100%;
+    max-width: 150px;
+    object-fit: cover;
+  }
+  

@@ -3,15 +3,34 @@
   padding-inline: 4%;
 }
 
-.ProductsCard {
+.ProductsCardholder .heading {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  gap: 15px;
+}
+.ProductsCardholder .heading .line {
+  width: 100px;
+  height: 5px;
+  background-color: #20603D;
+}
+.ProductsCardholder .heading h3 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  color: #20603D;
+}
+.ProductsCardholder .ProductsCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
   flex-wrap: wrap;
   gap: 20px;
 }
-.ProductsCard .product {
+.ProductsCardholder .ProductsCard .product {
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -21,25 +40,25 @@
   font-family: "inter";
   position: relative;
 }
-.ProductsCard .product img {
+.ProductsCardholder .ProductsCard .product img {
   width: 100%;
 }
-.ProductsCard .product .category {
+.ProductsCardholder .ProductsCard .product .category {
   color: #9F9F9F;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.36px;
   text-transform: capitalize;
 }
-.ProductsCard .product .name,
-.ProductsCard .product .price {
+.ProductsCardholder .ProductsCard .product .name,
+.ProductsCardholder .ProductsCard .product .price {
   font-size: 20px;
   font-weight: 500;
   line-height: 24.2px;
   color: #000000;
   text-transform: capitalize;
 }
-.ProductsCard .product .price {
+.ProductsCardholder .ProductsCard .product .price {
   font-size: 18px;
   font-weight: 500;
   line-height: 21.78px;

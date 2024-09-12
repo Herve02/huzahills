@@ -3,6 +3,57 @@
   padding-inline: 4%;
 }
 
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.heading .line {
+  width: 100px;
+  height: 5px;
+  background-color: #20603D;
+}
+.heading h3 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  color: #20603D;
+}
+
+.bFriday {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  color: #ffffff;
+}
+.bFriday h1 {
+  font-family: Outfit;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 70.56px;
+  letter-spacing: 0.12em;
+  color: black;
+  letter-spacing: 5px;
+  text-shadow: -1px -1px 0 #a7a7a7, 1px -1px 0 #a7a7a7, -1px 1px 0 #a7a7a7, 1px 1px 0 #a7a7a7;
+}
+.bFriday .dates {
+  background: #FF9500;
+  color: #FF9500;
+  padding: 8px 20px;
+}
+.bFriday .dates h2 {
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30.24px;
+  letter-spacing: 0.12em;
+}
+
 .hero {
   flex: 1;
   width: 100%;
@@ -149,6 +200,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  gap: 10px;
   font-family: Inter;
   color: white;
   padding: 20px;
@@ -185,6 +237,8 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 38.73px;
+  color: #ffffff !important;
+  text-align: center;
 }
 .hero .rightDiv .discount h1 {
   font-family: Inter;
@@ -194,5 +248,175 @@
   text-align: left;
 }
 .hero .rightDiv .discount a {
-  color: #F15C6C;
+  color: #f15c6c;
+}
+
+.announcementsWrapper {
+  width: 100%;
+  padding-inline: 4%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.announcementsWrapper > * {
+  flex: 1;
+}
+.announcementsWrapper .announcements {
+  height: 100%;
+  padding-block: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.announcementsWrapper .announcements .card .contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  color: #ffffff;
+  font-family: Inter;
+}
+.announcementsWrapper .announcements .card .contents h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+}
+.announcementsWrapper .announcements .card .contents h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58.09px;
+  color: #ffffff !important;
+}
+.announcementsWrapper .announcements:nth-child(1) {
+  background: url("../../public/Images/frigdes.svg");
+  background-position: center;
+  background-size: cover;
+}
+.announcementsWrapper .announcements:nth-child(2) {
+  background: url("../../public/Images/desksbg.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.features {
+  background: #146454;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 20px;
+  border-radius: 12px;
+  margin-block: 30px;
+}
+.features .feature {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.features .feature .img {
+  background: #2A7264;
+  padding: 10px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+}
+.features .feature .img img {
+  width: 24px;
+  height: 24px;
+}
+.features .feature p {
+  color: #ffffff;
+  font-family: Outfit;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
+}
+
+.downloadApp {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  gap: 20px;
+  background: url("../../public/Images/btmFrame.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+.downloadApp .contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: #ffffff;
+  font-family: Inter;
+  width: min(600px, 100%);
+}
+.downloadApp .contents h2 {
+  color: #146454 !important;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38.73px;
+  white-space: wrap;
+}
+.downloadApp .contents h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.05px;
+}
+.downloadApp .contents p {
+  font-family: Abhaya Libre;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.88px;
+}
+.downloadApp .contents ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.downloadApp .contents ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+}
+.downloadApp .contents .appStore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.downloadApp .contents .appStore p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.downloadApp .contents .appStore p span {
+  font-size: 18px;
+  line-height: 24.2px;
 }/*# sourceMappingURL=style.css.map */

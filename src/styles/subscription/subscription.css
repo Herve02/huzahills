@@ -1,0 +1,31 @@
+.subscription-detail {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-inline: 4%;
+}
+
+.subscription-svg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscription-svg svg {
+  max-width: 300px;
+  height: 100vh;
+  gap: 20px;
+}
+
+.subscription-content {
+  width: 100%;
+  display: flex;
+  background-color: #F6F6F6;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  padding-inline: 8%;
+}
+.subscription-content p {
+  width: 80%;
+}/*# sourceMappingURL=subscription.css.map */
