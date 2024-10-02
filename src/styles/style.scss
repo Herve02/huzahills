@@ -12,9 +12,10 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 38.73px;
-    color: $greenSolid
+    color: $greenSolid;
   }
 }
+
 .bFriday {
   @include flex(row, space-between, center);
   background: $black;
@@ -25,7 +26,7 @@
     font-weight: 900;
     line-height: 70.56px;
     letter-spacing: 0.12em;
-    color: black; 
+    color: black;
     letter-spacing: 5px;
     text-shadow: -1px -1px 0 #a7a7a7, 1px -1px 0 #a7a7a7, -1px 1px 0 #a7a7a7,
       1px 1px 0 #a7a7a7;
@@ -43,6 +44,8 @@
     }
   }
 }
+// HERO SECTION STYLES
+
 .hero {
   flex: 1;
   width: 100%;
@@ -81,7 +84,7 @@
       border-radius: 12px;
       padding-left: 30px;
       .contents {
-        width: 250px;
+        width: min(250px, 100%);
         z-index: 9;
         font-family: Inter;
         color: $white;
@@ -171,7 +174,8 @@
       gap: 10px;
       font-family: Inter;
       color: white;
-      padding: 20px;
+      padding-block: 30px;
+      padding-inline: 15px;
       border-radius: 12px;
       h3 {
         font-size: 24px;
@@ -185,6 +189,7 @@
       }
       a {
         color: $btnGreen;
+        width: 100%;
       }
     }
     .discount {
@@ -285,7 +290,7 @@
       border-radius: 5px;
       height: 40px;
       width: 40px;
-      img{
+      img {
         width: 24px;
         height: 24px;
       }
@@ -364,3 +369,5 @@
     }
   }
 }
+
+@import "./responsiveness";

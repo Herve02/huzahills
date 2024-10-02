@@ -13,7 +13,7 @@ $categoryColor: #4B4B4B;
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 @mixin flex($direction, $justify-content, $align-items) {
     display: flex;
-    flex-direction: $direction;
+    flex-direction: $direction !important;
     justify-content: $justify-content;
     align-items: $align-items;
   }

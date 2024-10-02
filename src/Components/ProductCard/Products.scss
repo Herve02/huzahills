@@ -44,6 +44,9 @@
         line-height: 24.2px;
         color: $black;
         text-transform: capitalize;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
       .price {
         font-size: 18px;

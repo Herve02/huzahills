@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap");
 .container {
   padding-inline: 4%;
 }
 
 .heading {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 15px;
@@ -25,7 +26,7 @@
 
 .bFriday {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
   background: #000000;
@@ -60,7 +61,7 @@
   min-height: 100vh;
   padding-block: 15px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: strech;
   gap: 20px;
@@ -68,7 +69,7 @@
 .hero .categories {
   width: 25%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: start;
   background: #f9fcf7;
@@ -85,7 +86,7 @@
 .hero .middleDiv {
   width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: start;
   align-items: center;
   gap: 20px;
@@ -95,7 +96,7 @@
   height: 90%;
   background-color: #FF9500;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 20px;
@@ -105,7 +106,7 @@
   padding-left: 30px;
 }
 .hero .middleDiv .cta .contents {
-  width: 250px;
+  width: min(250px, 100%);
   z-index: 9;
   font-family: Inter;
   color: #ffffff;
@@ -141,7 +142,7 @@
 }
 .hero .middleDiv .offers {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -157,7 +158,7 @@
   height: 100px;
   border-radius: 12px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: center;
 }
@@ -187,7 +188,7 @@
 .hero .rightDiv {
   width: 25%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -197,13 +198,14 @@
   height: 45%;
   background: #20603D;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: start;
   gap: 10px;
   font-family: Inter;
   color: white;
-  padding: 20px;
+  padding-block: 30px;
+  padding-inline: 15px;
   border-radius: 12px;
 }
 .hero .rightDiv .manage h3 {
@@ -218,6 +220,7 @@
 }
 .hero .rightDiv .manage a {
   color: #146454;
+  width: 100%;
 }
 .hero .rightDiv .discount {
   width: 100%;
@@ -227,7 +230,7 @@
   background-size: cover;
   border-radius: 12px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: center;
   font-family: Inter;
@@ -258,7 +261,7 @@
   padding-inline: 4%;
   height: 50vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -272,13 +275,13 @@
   padding-block: 30px;
   border-radius: 12px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: start;
 }
 .announcementsWrapper .announcements .card .contents {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: start;
   gap: 10px;
@@ -310,7 +313,7 @@
 .features {
   background: #146454;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
@@ -321,7 +324,7 @@
 .features .feature {
   width: 50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -350,7 +353,7 @@
   width: 100%;
   min-height: 70vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
@@ -362,7 +365,7 @@
 }
 .downloadApp .contents {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: start;
   color: #ffffff;
@@ -394,7 +397,7 @@
 }
 .downloadApp .contents ul li {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 10px;
@@ -404,7 +407,7 @@
 }
 .downloadApp .contents .appStore {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -414,11 +417,238 @@
   font-weight: 400;
   line-height: 14.52px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: start;
   align-items: start;
 }
 .downloadApp .contents .appStore p span {
   font-size: 18px;
   line-height: 24.2px;
+}
+
+.container {
+  padding-inline: 4%;
+}
+
+@media (max-width: 768px) {
+  .bFriday {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+  }
+  .bFriday h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.56px;
+  }
+  .bFriday .dates {
+    background: #FF9500;
+    color: #FF9500;
+    padding: 6px 14px;
+  }
+  .bFriday .dates h2 {
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24.24px;
+  }
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    padding-block: 15px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: strech;
+    gap: 20px;
+  }
+  .hero .categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: start;
+    background: #f9fcf7;
+    border-radius: 10px;
+    gap: 10px;
+  }
+  .hero .categories li a {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.2px;
+    color: #4B4B4B;
+  }
+  .hero .middleDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero .middleDiv .cta {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  .hero .middleDiv .cta .contents {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+  .hero .middleDiv .cta .contents h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40.61px;
+  }
+  .hero .middleDiv .cta .contents h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.73px;
+  }
+  .hero .middleDiv .cta .contents p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 18.78px;
+  }
+  .hero .middleDiv .cta .img {
+    z-index: 1;
+  }
+  .hero .middleDiv .offers .btm-img {
+    height: calc(width);
+  }
+  .hero .middleDiv .offers .btm-img p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.05px;
+  }
+  .hero .rightDiv {
+    width: 100%;
+  }
+  .hero .rightDiv .manage {
+    width: 100%;
+    height: auto;
+  }
+  .hero .rightDiv .manage h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .hero .rightDiv .manage p {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .hero .rightDiv .discount {
+    height: auto;
+    padding-block: 20px;
+  }
+  .hero .rightDiv .discount h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .hero .rightDiv .discount h1 {
+    font-family: Inter;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 50.14px;
+  }
+  .announcementsWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+  }
+  .announcementsWrapper .announcements {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: center;
+  }
+  .announcementsWrapper .announcements .card .contents h4 {
+    letter-spacing: 2px;
+  }
+  .announcementsWrapper .announcements .card .contents h2 {
+    font-size: 36px;
+  }
+  .features {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .features .feature {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: start;
+    align-items: center;
+    padding-inline: 10px;
+  }
+  .features .feature .img {
+    padding: 10px;
+    height: 36px;
+    width: 36px;
+  }
+  .features .feature .img img {
+    width: 20px;
+    height: 20px;
+  }
+  .features .feature p {
+    font-size: 17px;
+    font-weight: unset;
+    line-height: 16.2px;
+  }
+  .downloadApp {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+  }
+  .downloadApp .contents {
+    gap: 20px;
+  }
+  .downloadApp .contents h2 {
+    font-size: 28px;
+  }
+  .downloadApp .contents p {
+    font-size: 16px;
+    font-weight: unset;
+  }
+  .downloadApp .contents ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .downloadApp .contents ul li {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: unset;
+    letter-spacing: 2px;
+  }
+  .downloadApp .contents .appStore p {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+  }
+  .downloadApp .contents .appStore p span {
+    font-size: 16px;
+    line-height: 24.2px;
+  }
 }/*# sourceMappingURL=style.css.map */

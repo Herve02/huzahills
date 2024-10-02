@@ -3,18 +3,22 @@ import Hero from "./Hero";
 import Announcements from "../Announcements";
 import AppStore from "../Button/AppStore";
 import Product from "../../component/Product";
-
+import BlackFriday from "../StoreNotice/BlackFriday";
+import NavBar from "../NavBar/NavBar";
+import Links from "../Button/Links";
 
 const HomePage = () => {
   return (
     <>
       <div className="wrapper">
+        <BlackFriday />
+        <NavBar />
         <Hero />
         <div className="heading container">
           <div className="line"></div>
           <h3>Hot sales</h3>
         </div>
-        <Product/>
+        <Product />
         <div className="announcementsWrapper container">
           <Announcements
             header="Hot Appliances"
@@ -32,10 +36,14 @@ const HomePage = () => {
           />
         </div>
         <div className="heading container">
-          <div className="line"></div>
           <h3>Popular products</h3>
+          <div className="buttons">
+          <Links to="/" text="Popular" cName="btn bgGreen PopularBtn" />
+          <Links to="/" text="Recents" cName="btn btnBgNone PopularBtn" />
+          <Links to="/" text="Best sellers" cName="btn btnBgNone PopularBtn" />
+          </div>
         </div>
-        <Product/>
+        <Product />
         <div className="container">
           <div className="features">
             <div className="feature">
@@ -75,35 +83,49 @@ const HomePage = () => {
         <div className="container">
           <div className="downloadApp">
             <div className="contents">
-            <h2>Download Our App for a Better Shopping Experience!</h2>
-            <h3>Why Download Our App?</h3>
-            <ul>
-              <li><img src="./Images/profile.svg" alt="" />Exclusive app-only discounts</li>
-              <li><img src="./Images/profile.svg" alt="" />Personalized recommendations</li>
-              <li><img src="./Images/profile.svg" alt="" />Easy access to customer service</li>
-              <li><img src="./Images/fee.svg" alt="" />Faster checkout process</li>
-              <li><img src="./Images/realtime.svg" alt="" />Real-time order tracking</li>
-            </ul>
-            <div className="appStore">
-              <AppStore
-                to="/"
-                cName="btn bgBlack"
-                logo="./Images/googlePlay.svg"
-                text="Get it on"
-                span="Google Play"
-              />
-              <AppStore
-                to="/"
-                cName="btn bgBlack"
-                logo="./Images/Apple.svg"
-                text="Download on the"
-                span="Apple Store"
-              />
-            </div>
+              <h2>Download Our App for a Better Shopping Experience!</h2>
+              <h3>Why Download Our App?</h3>
+              <ul>
+                <li>
+                  <img src="./Images/profile.svg" alt="" />
+                  Exclusive app-only discounts
+                </li>
+                <li>
+                  <img src="./Images/profile.svg" alt="" />
+                  Personalized recommendations
+                </li>
+                <li>
+                  <img src="./Images/profile.svg" alt="" />
+                  Easy access to customer service
+                </li>
+                <li>
+                  <img src="./Images/fee.svg" alt="" />
+                  Faster checkout process
+                </li>
+                <li>
+                  <img src="./Images/realtime.svg" alt="" />
+                  Real-time order tracking
+                </li>
+              </ul>
+              <div className="appStore">
+                <AppStore
+                  to="/"
+                  cName="btn bgBlack"
+                  logo="./Images/googlePlay.svg"
+                  text="Get it on"
+                  span="Google Play"
+                />
+                <AppStore
+                  to="/"
+                  cName="btn bgBlack"
+                  logo="./Images/Apple.svg"
+                  text="Download on the"
+                  span="Apple Store"
+                />
+              </div>
             </div>
           </div>
         </div>
-      
       </div>
     </>
   );

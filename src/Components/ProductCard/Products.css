@@ -5,7 +5,7 @@
 
 .ProductsCardholder .heading {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 15px;
@@ -24,7 +24,7 @@
 }
 .ProductsCardholder .ProductsCard {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: center;
   align-items: start;
   flex-wrap: wrap;
@@ -33,7 +33,7 @@
 .ProductsCardholder .ProductsCard .product {
   width: 200px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -57,6 +57,9 @@
   line-height: 24.2px;
   color: #000000;
   text-transform: capitalize;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .ProductsCardholder .ProductsCard .product .price {
   font-size: 18px;

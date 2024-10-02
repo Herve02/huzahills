@@ -1,18 +1,36 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./nav.css";
+import { Navlinks } from "./NavLinks";
+import { FaBars } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
 
 const NavBar = () => {
+  const [showNav, SetShowNav] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null);
+  const menus = useRef([]);
+
+  function ToggleMenu() {
+    SetShowNav(!showNav);
+    console.log(showNav);
+  }
+  function handleDropDown(index) {
+    setOpenIndex(index === openIndex ? null : index);
+  }
+
   return (
-    <>
-      <nav className="container">
+    <nav className="container">
+      <div className="logoMobile">
+        <img src="../Images/HuzaLogo.png" alt="Huza logo" />
+      </div>
+      <div className={showNav ? "NavWrapper ShowMenu" : "NavWrapper"}>
         <div className="search">
           <div className="logo">
-            <img src="./Images/HuzaLogo.png" alt="Huza logo"  />
+            <img src="../Images/HuzaLogo.png" alt="Huza logo" />
           </div>
           <form action="">
-          <img src="./Images/search.svg" alt="" />
-          <input type="text" placeholder="What are you looking for" />
+            <img src="../Images/search.svg" alt="" />
+            <input type="text" placeholder="What are you looking for" />
           </form>
           <div className="selections">
             <select name="select" id="">
@@ -24,7 +42,7 @@ const NavBar = () => {
               <option value="">mens clothes</option>
             </select>
             <div className="cart">
-              <img src="./Images/cart2.svg" alt="" />
+              <img src="../Images/cart2.svg" alt="" />
               <span>0</span>
             </div>
           </div>
@@ -32,59 +50,61 @@ const NavBar = () => {
 
         <div className="nav-links-div">
           <ul>
-            <li>
-              <Link to="/">
-                Fashion{" "}
-                <img
-                  src="./Images/Arrowdown.svg"
-                  alt="no image found"
-                  
-                />
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                Jewely <img src="./Images/Arrowdown.svg" alt=""  />
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                Made in Rwanda{" "}
-                <img src="./Images/Arrowdown.svg" alt=""  />
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                Kids <img src="./Images/Arrowdown.svg" alt=""  />
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                Arts <img src="./Images/Arrowdown.svg" alt=""  />
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                Electronics{" "}
-                <img src="./Images/Arrowdown.svg" alt=""  />
-              </Link>
-            </li>
-            <div className="lists-grp">
-              <li>
+            {Navlinks.map(
+              (link, index) =>
+                link &&
+                !link.offer && (
+                  <li key={index} className="">
+                    <div
+                      className="dropdownHolder"
+                      onClick={() =>
+                        link.dropdownLinks && handleDropDown(index)
+                      }
+                    >
+                      <Link to={link.path}>
+                        {link.text}
+                        <img
+                          src={link.offer ? null : link.dropDownIcon}
+                          alt=""
+                          ref={(el) => (menus.current[index] = el)}
+                        />
+                      </Link>
+                      {openIndex === index && link.dropdownLinks && (
+                        <ul className="submenu">
+                          {link.dropdownLinks.map((item, itemIndex) => (
+                            <li key={itemIndex}>
+                              <Link to={item.to}>{item.text}</Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </li>
+                )
+            )}
+          </ul>
+          <ul className="right-menus">
+            {Navlinks.slice(6, 8).map((LinkItem, index) => (
+              <li key={index}>
                 <Link>
-                  Offers <img src="./Images/Arrowdown.svg" alt=""  />
+                  {LinkItem.offer && LinkItem.offer}
+                  <img
+                    src={LinkItem.offer ? LinkItem.dropDownIcon : ""}
+                    alt="offer"
+                  />
                 </Link>
               </li>
-              <li>
-                <Link>
-                  Offers <img src="./Images/Arrowdown.svg" alt=""  />
-                </Link>
-              </li>
-            </div>
+            ))}
           </ul>
         </div>
-      </nav>
-    </>
+      </div>
+      <div className="menuBars" onClick={ToggleMenu}>
+        {
+          !showNav ? <FaBars style={{color: "white"}}/>: <FaX style={{color: "white"}}/>
+          
+        }
+      </div>
+    </nav>
   );
 };
 

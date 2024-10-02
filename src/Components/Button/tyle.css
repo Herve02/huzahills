@@ -16,6 +16,16 @@
   width: fit-content;
 }
 
+.btnBgNone {
+  background: #F4F4F4;
+  color: #9F9F9F;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: center;
+}
+
 .bgwhite {
   background: #ffffff;
   color: #FF9500;
@@ -38,13 +48,25 @@
   right: 8px;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: end;
+  align-items: center;
+  flex: 2;
+  gap: 10px;
+}
+.buttons .PopularBtn {
+  position: unset;
+}
+
 .bgBlack {
   font-family: Inter;
   background: #000000;
   color: #FF9500;
   color: #ffffff;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   padding-inline: 22px;
@@ -58,7 +80,7 @@
   font-weight: 400;
   line-height: 14.52px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: start;
   align-items: start;
 }

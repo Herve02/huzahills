@@ -1,0 +1,207 @@
+@import "../styles/_config.scss";
+
+@media (max-width: 768px) {
+
+  
+.bFriday {
+  @include flex(row, space-between, center);
+  background: $black;
+  color: $white;
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.56px;
+  }
+  .dates {
+    background: $Yellow;
+    color: $Yellow;
+    padding: 6px 14px;
+    h2 {
+      font-family: Outfit;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 24.24px;
+    }
+  }
+}
+  // HERO SECTION STYLES
+
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    padding-block: 15px;
+    @include flex(column, space-between, strech);
+    gap: 20px;
+    .categories {
+      width: 100%;
+      @include flex(column, center, start);
+      background: #f9fcf7;
+      border-radius: 10px;
+      gap: 10px;
+      li {
+        a {
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24.2px;
+          color: $categoryColor;
+        }
+      }
+    }
+    .middleDiv {
+      width: 100%;
+      @include flex(column, start, center);
+      gap: 20px;
+      .cta {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        .contents {
+          @include flex(column, start, start);
+          gap: 10px;
+          h1 {
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 40.61px;
+          }
+          h3 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30.73px;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 100;
+            line-height: 18.78px;
+          }
+        }
+        .img {
+          z-index: 1;
+        }
+      }
+      .offers {
+        .btm-img {
+          height: calc(width);
+          p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22.05px;
+          }
+        }
+      }
+    }
+    .rightDiv {
+      width: 100%;
+      .manage {
+        width: 100%;
+        height: auto;
+        h3 {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 28px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }
+      .discount {
+        height: auto;
+        padding-block: 20px;
+        h2 {
+          font-size: 24px;
+          font-weight: 500;
+        }
+        h1 {
+          font-family: Inter;
+          font-size: 44px;
+          font-weight: 700;
+          line-height: 50.14px;
+        }
+      }
+    }
+  }
+  .announcementsWrapper {
+    width: 100%;
+    height: auto;
+    @include flex(column, start, start);
+    .announcements {
+      width: 100%;
+      @include flex(column, start, center);
+      .card {
+        .contents {
+          h4 {
+            letter-spacing: 2px;
+          }
+          h2 {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  // features section
+
+  .features {
+    @include flex(column, space-between, center);
+    gap: 10px;
+    .feature {
+      width: 100%;
+      @include flex(row, start, center);
+      padding-inline: 10px;
+      .img {
+        padding: 10px;
+        height: 36px;
+        width: 36px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      p {
+        font-size: 17px;
+        font-weight: unset;
+        line-height: 16.2px;
+      }
+    }
+  }
+  // download app section
+
+  .downloadApp {
+    width: 100%;
+    min-height: 70vh;
+    @include flex(column, space-between, center);
+    padding: 20px 8%;
+    .contents {
+      gap: 20px;
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: unset;
+      }
+      ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        li {
+          @include flex(row, start, center);
+          gap: 10px;
+          font-size: 16px;
+          font-weight: unset;
+          letter-spacing: 2px;
+        }
+      }
+      .appStore {
+        p {
+          @include flex(column, start, start);
+          span {
+            font-size: 16px;
+            line-height: 24.2px;
+          }
+        }
+      }
+    }
+  }
+}

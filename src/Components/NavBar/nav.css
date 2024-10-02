@@ -3,11 +3,17 @@
   padding-inline: 4%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   font-size: 18px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -15,46 +21,54 @@ a {
 
 nav {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
   padding-block: 15px;
   background: #146454;
+  z-index: 999;
+  position: relative;
 }
-nav .search {
+nav .logoMobile {
+  display: none;
+}
+nav .NavWrapper {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column !important;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+nav .NavWrapper .search {
+  width: 100%;
+  display: flex;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
 }
-nav .search form {
+nav .NavWrapper .search form {
   width: 400px !important;
   position: relative;
 }
-nav .search form img {
+nav .NavWrapper .search form img {
   position: absolute;
   top: 25%;
   left: 15px;
   transform: translate(-50%);
 }
-nav .search form input {
+nav .NavWrapper .search form input {
   width: 100%;
   background: #ffffff;
   padding: 10px 10px 10px 30px;
   border: none;
   border-radius: 10px;
 }
-nav .search .selections {
+nav .NavWrapper .search .selections {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: end;
   align-items: center;
   gap: 20px;
 }
-nav .search .selections select {
+nav .NavWrapper .search .selections select {
   border: none;
   padding: 4px 5px 4px 15px;
   background: #ffffff;
@@ -62,35 +76,207 @@ nav .search .selections select {
   height: 40px;
   border-radius: 10px;
 }
-nav .search .selections .cart {
+nav .NavWrapper .search .selections .cart {
   position: relative;
   padding: 5px;
 }
-nav .search .selections .cart span {
+nav .NavWrapper .search .selections .cart span {
   position: absolute;
   top: -6px;
   right: -2px;
   color: white;
 }
-nav .nav-links-div {
+nav .NavWrapper .nav-links-div {
   width: 100%;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: start;
+  align-items: center;
 }
-nav .nav-links-div ul {
-  width: 100%;
+nav .NavWrapper .nav-links-div ul {
+  flex: 3;
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 20px;
 }
-nav .nav-links-div ul li a {
+nav .NavWrapper .nav-links-div ul li {
+  position: relative;
+}
+nav .NavWrapper .nav-links-div ul li a {
   color: #ffffff;
 }
-nav .nav-links-div ul .lists-grp {
+nav .NavWrapper .nav-links-div .right-menus {
+  flex: 1;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: row !important;
+  justify-content: end;
   align-items: center;
   margin-left: auto;
+}
+nav .menuBars {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 20px;
+  display: none;
+}
+
+.dropdownHolder {
+  position: relative;
+}
+.dropdownHolder ul {
+  background: #146454;
+}
+.dropdownHolder .submenu {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  display: grid !important;
+  z-index: 999;
+}
+.dropdownHolder .submenu li a {
+  text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 780px) {
+  nav {
+    padding-inline: unset;
+    width: 100%;
+  }
+  nav .logoMobile {
+    display: block;
+    align-self: flex-start;
+    position: relative;
+  }
+  nav .NavWrapper {
+    position: absolute;
+    top: 75px;
+    background: #146454;
+    padding-inline: 4%;
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    left: -120%;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .NavWrapper .search {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  nav .NavWrapper .search .logo {
+    display: none;
+  }
+  nav .NavWrapper .search form {
+    width: min(100%, 400px) !important;
+  }
+  nav .NavWrapper .search form input {
+    padding: 8px 10px 8px 30px;
+    border-radius: 8px;
+  }
+  nav .NavWrapper .search .selections {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+  }
+  nav .NavWrapper .search .selections select {
+    padding: 8px 5px 8px 15px;
+    width: auto;
+    height: unset;
+    border-radius: 8px;
+  }
+  nav .NavWrapper .nav-links-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+  nav .NavWrapper .nav-links-div ul {
+    flex: unset;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+  }
+  nav .NavWrapper .nav-links-div ul li {
+    width: 100%;
+  }
+  nav .NavWrapper .nav-links-div ul li a {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    position: relative;
+  }
+  nav .NavWrapper .nav-links-div ul li a::after {
+    content: "";
+    background: #2A7264;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+  }
+  nav .NavWrapper .nav-links-div .right-menus {
+    flex: 1;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: end;
+    align-items: center;
+    margin-left: unset;
+  }
+  nav .menuBars {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 20px;
+    display: block;
+  }
+  .NavWrapper.ShowMenu {
+    left: 0;
+  }
+  .dropdownHolder {
+    position: relative;
+  }
+  .dropdownHolder ul {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+    background: #146454;
+  }
+  .dropdownHolder .submenu {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: grid;
+    z-index: 999;
+  }
+  .dropdownHolder .submenu li {
+    display: block !important;
+  }
+  .dropdownHolder .submenu li a {
+    text-wrap: nowrap;
+  }
 }/*# sourceMappingURL=nav.css.map */

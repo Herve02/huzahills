@@ -10,6 +10,16 @@
   opacity: 0px;
   width: fit-content;
 }
+.btnBgNone{
+  background: #F4F4F4;
+  color: #9F9F9F;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: center;
+  
+}
 .bgwhite {
   background: $white;
   color: $Yellow;
@@ -27,6 +37,14 @@
   position: absolute;
   top: 8px;
   right: 8px;
+}
+.buttons{
+  @include flex(row, end, center);
+  flex: 2;
+  gap: 10px;
+  .PopularBtn{
+    position: unset;   
+  }
 }
 .bgBlack {  
   font-family: Inter;

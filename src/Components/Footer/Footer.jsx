@@ -12,7 +12,7 @@ const Footer = () => {
       <footer className="container">
         <div className="topbar">
           <div className="about">
-            <img src="./Images/logoGreen.svg" alt="" />
+            <img src="../Images/logoGreen.svg" alt="" />
             <p>
               Ornare quis nec congue in ut mi risus aliquam vulputate. Massa non
               praesent sit ut phasellus nisl cras.
@@ -21,14 +21,14 @@ const Footer = () => {
               <AppStore
                 to="/"
                 cName="btn bgBlack"
-                logo="./Images/googlePlay.svg"
+                logo="../Images/googlePlay.svg"
                 text="Get it on"
                 span="Google Play"
               />
               <AppStore
                 to="/"
                 cName="btn bgBlack"
-                logo="./Images/Apple.svg"
+                logo="../Images/Apple.svg"
                 text="Download on the"
                 span="Apple Store"
               />
@@ -98,9 +98,9 @@ const Footer = () => {
               praesent sit ut phasellus nisl cras.
             </p>
             <div className="socialIcons">
-              <img src="./Images/fbIcon.svg" alt=""  />
-              <img src="./Images/linkedin.svg" alt=""  />
-              <img src="./Images/instagrambgied.svg" alt=""  />
+              <img src="../Images/fbIcon.svg" alt=""  />
+              <img src="../Images/linkedin.svg" alt=""  />
+              <img src="../Images/instagrambgied.svg" alt=""  />
             </div>
           </div>
         </div>
@@ -108,9 +108,9 @@ const Footer = () => {
         <div className="bottombar">
           <div className="icons-policies">
             <div className="socialIcons">
-              <img src="./Images/twitter.svg" alt=""  />
-              <img src="./Images/ig.svg" alt=""  />
-              <img src="./Images/fbV.svg" alt=""  />
+              <img src="../Images/twitter.svg" alt=""  />
+              <img src="../Images/ig.svg" alt=""  />
+              <img src="../Images/fbV.svg" alt=""  />
             </div>
             <ul>
               <li>
@@ -129,9 +129,9 @@ const Footer = () => {
           <div className="paymentMethods">
             <p>our payment methods</p>
             <div className="icons">
-              <img src="./Images/airtel.svg" alt=""  />
-              <img src="./Images/mastercard.svg" alt=""  />
-              <img src="./Images/paypal_logo.svg" alt=""  />
+              <img src="../Images/airtel.svg" alt=""  />
+              <img src="../Images/mastercard.svg" alt=""  />
+              <img src="../Images/paypal_logo.svg" alt=""  />
             </div>
           </div>
         </div>

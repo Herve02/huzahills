@@ -1,0 +1,26 @@
+.dropDown{
+    background: rgb(0, 134, 96);
+    min-width: 200px;
+    height: auto;
+    padding-block: 15px;
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    z-index: 100;
+    opacity: 0;
+    transition: .6s ease-in-out;
+    
+}
+    .dropDown.open{  
+    opacity: 1;
+    left: 0;
+    }
+
+.dropDown ul{  
+      
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    transition: .6s;
+   
+}

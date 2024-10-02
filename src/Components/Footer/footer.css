@@ -17,7 +17,7 @@ h2 {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   align-items: start;
   gap: 20px;
@@ -30,7 +30,7 @@ footer {
 footer .topbar {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: start;
   gap: 20px;
@@ -42,7 +42,7 @@ footer .topbar > * {
 footer .topbar .about {
   flex: 2;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: start;
   align-items: start;
   gap: 10px;
@@ -55,7 +55,7 @@ footer .topbar .about p {
 }
 footer .topbar .about .appStore {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 10px;
@@ -63,21 +63,21 @@ footer .topbar .about .appStore {
 footer .topbar .importantLinks {
   flex: 2.5;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: start;
   gap: 20px;
 }
 footer .topbar .importantLinks .linksDiv {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: start;
   align-items: start;
   gap: 10px;
 }
 footer .topbar .importantLinks .linksDiv ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: start;
   align-items: start;
   gap: 10px;
@@ -100,7 +100,7 @@ footer .topbar .importantLinks .linksDiv ul .loadmoreBtn {
 footer .topbar .contacts {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: start;
   align-items: start;
   gap: 15px;
@@ -116,7 +116,7 @@ footer .topbar .contacts p {
 }
 footer .topbar .contacts .socialIcons {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 10px;
@@ -124,7 +124,7 @@ footer .topbar .contacts .socialIcons {
 footer .bottombar {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -133,21 +133,21 @@ footer .bottombar {
 }
 footer .bottombar .icons-policies {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 10px;
 }
 footer .bottombar .icons-policies .socialIcons {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 10px;
 }
 footer .bottombar .icons-policies ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 10px;
@@ -157,7 +157,7 @@ footer .bottombar .icons-policies ul li a {
 }
 footer .bottombar .policies {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -169,7 +169,7 @@ footer .bottombar .policies p {
 }
 footer .bottombar .paymentMethods {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 10px;
@@ -183,8 +183,100 @@ footer .bottombar .paymentMethods p {
 }
 footer .bottombar .paymentMethods .icons {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: start;
   align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  footer .topbar {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: start;
+  }
+  footer .topbar > * {
+    flex: unset;
+  }
+  footer .topbar .about {
+    flex: unset;
+  }
+  footer .topbar .importantLinks {
+    flex: unset;
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+  }
+  footer .topbar .importantLinks .linksDiv {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+  footer .topbar .importantLinks .linksDiv ul {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+  footer .bottombar {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .bottombar .icons-policies {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start;
+    align-items: start;
+  }
+  footer .bottombar .icons-policies ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: start;
+  }
+  footer .bottombar .policies {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .bottombar .policies p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+  }
+  footer .bottombar .paymentMethods {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .bottombar .paymentMethods p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.23px;
+    text-transform: capitalize;
+    color: #2b2929;
+  }
+  footer .bottombar .paymentMethods .icons {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=footer.css.map */
