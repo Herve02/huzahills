@@ -5,7 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "../src/Components/Footer/Footer";
 import ProductDetails from "../src/component/ProductDetails";
 import Subscription from "./component/Subscription";
+import reactGa from "react-ga";
+const TrackingID = "G-T48L5QGKLE";
 const App = () => {
+
   return (
     <>
       <Router>
