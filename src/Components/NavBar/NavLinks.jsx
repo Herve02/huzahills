@@ -6,11 +6,11 @@ export const Navlinks = [
     dropDownIcon: "../Images/Arrowdown.svg",
     dropdownLinks:[
         {
-            to: "/",
+            to: "",
             text: "mens clothes"            
         },
         {
-            to: "/",
+            to: "",
             text: "women's clothes"            
         },
         {
